@@ -2,9 +2,11 @@
 
 This folder contains all my courses, notes, assignments, and projects completed through Coursera.
 
-## 📚 Courses
+---
 
-### 📌 Course Name: **Meta Front-End Developer Professional Certificate**
+## 📂 Contents
+
+- [Meta Front-End Developer Professional Certificate](./little-lemon-restaurant/)
 
 ---
 
