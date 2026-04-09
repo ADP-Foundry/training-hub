@@ -13,6 +13,7 @@ const Layout = () => {
         <section className="flex-1">
           <Outlet />
         </section>
+
         <Footer />
       </article>
     </main>

@@ -14,7 +14,7 @@ const navbarLinks: NavLink[] = [
   },
   {
     name: "About",
-    path: "/about",
+    path: "about",
   },
   {
     name: "Menu",
@@ -36,9 +36,7 @@ const navbarLinks: NavLink[] = [
 
 export const Navbar = () => {
   const fnIsActive = (isActive: boolean) => {
-    return isActive
-      ? "btn-warning text-warning-content font-bold"
-      : "btn-ghost";
+    return isActive ? "btn-accent text-accent-content font-bold" : "btn-ghost";
   };
 
   return (
