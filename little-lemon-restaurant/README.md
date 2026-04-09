@@ -1,27 +1,23 @@
-# 🚀 Capstone Project: [Little Lemon Restaurant Booking App]
+# 🎓 Coursera Training
 
-## 📌 Overview
+This folder contains all my courses, notes, assignments, and projects completed through Coursera.
 
-This is my capstone project built using **Next.js**, showcasing the skills I learned from my training program. The application demonstrates modern web development practices including server-side rendering, routing, and component-based architecture.
+---
 
-## 🎯 Objectives
+## 📂 Contents
 
-- Build a full-stack or front-end application using Next.js
-- Apply best practices in UI/UX and performance
-- Implement real-world features and workflows
+- [Meta Front-End Developer Professional Certificate](./little-lemon-restaurant/)
 
-## 📸 Screenshots
+---
 
-_Add screenshots or GIFs of your app here_
+## 🎯 Goals
 
-## 🧠 What I Learned
+- Complete all enrolled courses
+- Build real-world projects
+- Strengthen problem-solving and coding skills
 
-- Building apps with Next.js
-- Routing and page structure
-- Fetching and handling data
-- Component reusability
-- Performance optimization
+---
 
-## 🏆 Acknowledgment
+## 📌 Notes
 
-This project was completed as part of my training on **Coursera / [Meta Front-End Developer Professional Certificate]**.
+This directory is part of my larger **Training Hub** repository, where I organize all my learning from different platforms.
