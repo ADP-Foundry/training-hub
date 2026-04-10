@@ -4,6 +4,7 @@ import Layout from "./layout/Layout";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Menu from "./pages/menu";
+import Reservation from "./pages/reservation";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="menu" element={<Menu />} />
+        <Route path="reservation" element={<Reservation />} />
       </Route>
     </Routes>
   );

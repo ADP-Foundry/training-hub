@@ -40,3 +40,8 @@ body {
   background-color: var(--color-base-100);
   font-size: 16px;
 }
+
+* ::selection {
+  color: #495e57;
+  background-color: #f4ce14;
+}

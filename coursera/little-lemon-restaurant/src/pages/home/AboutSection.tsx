@@ -33,9 +33,7 @@ const AboutSection = () => {
           </Link>
         </div>
 
-   
         <div className="relative lg:w-1/2">
-    
           <div className="relative z-10 ml-auto w-4/5">
             <img
               src={MarioAndAdrian}
@@ -44,7 +42,6 @@ const AboutSection = () => {
             />
           </div>
 
-          
           <div className="absolute -bottom-12 left-0 z-20 w-3/5">
             <img
               src={Restaurant}
