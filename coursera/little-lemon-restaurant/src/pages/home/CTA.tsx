@@ -1,34 +1,36 @@
 import { Link } from "react-router-dom";
+import { Minus, MoveRight } from "lucide-react";
 
+import { cn } from "@/libs/cn";
 import Restaurant from "@/assets/restaurant.jpg";
 import RestaurantChef from "@/assets/restaurant-chef-B.jpg";
 
 const CTA = () => {
   return (
-    <section className="relative container mx-auto overflow-hidden px-6 py-24">
-      {/* BACKGROUND POD - Deep Secondary (Brown) */}
-      <div className="bg-base-300 relative grid grid-cols-1 items-center gap-16 overflow-hidden rounded-[3rem] p-12 shadow-sm md:p-20 lg:grid-cols-12">
-        {/* Decorative Texture - Makes it "Non-Generic"
-            We'll use a very subtle pattern or a large, soft blur of the accent color.
-        */}
+    <section className="relative container mx-auto overflow-hidden px-0 py-24 md:px-6">
+      <div
+        className={cn(
+          "bg-base-200 relative grid grid-cols-1 items-center gap-16 overflow-hidden rounded-none p-12 pb-24 shadow-sm",
+          "md:rounded-[3rem] md:p-20 lg:grid-cols-12",
+        )}
+      >
         <div className="absolute inset-0 z-0 opacity-10">
-          <div className="bg-accent absolute top-[-10%] right-[-10%] h-96 w-96 rounded-full blur-[100px]" />
+          <div className="bg-warning absolute top-[-10%] right-[-10%] h-96 w-96 rounded-full blur-[100px]" />
           <div className="bg-primary absolute bottom-[-10%] left-[-10%] h-64 w-64 rounded-full blur-[80px]" />
         </div>
 
-        {/* CONTENT AREA (L-Shape) */}
         <div className="text-secondary-content relative z-10 space-y-12 lg:col-span-7">
-          <div className="text-accent space-y-4">
-            {/* Using brand accent (Peach) for the pre-header */}
-            <span className="font-mono text-sm tracking-[0.4em] text-black uppercase">
-              - Reservations Suggested
+          <hgroup className="text-accent space-y-4">
+            <span className="flex items-center gap-3 font-mono text-sm tracking-[0.4em] text-black uppercase">
+              <Minus strokeWidth={1} />
+              Reservations Suggested
             </span>
             <h2 className="text-5xl leading-tight font-light tracking-tighter md:text-7xl">
               A seat at{" "}
               <span className="font-serif font-normal italic">the table</span>{" "}
               awaits.
             </h2>
-          </div>
+          </hgroup>
 
           <p className="max-w-xl text-xl leading-relaxed font-light text-black">
             From intimate date nights to family celebrations, Little Lemon is
@@ -36,19 +38,19 @@ const CTA = () => {
             today.
           </p>
 
-          <div className="flex flex-col items-start gap-6 pt-4 sm:flex-row sm:items-center">
-            {/* The Main Action - Black Primary on Secondary */}
+          <div className="flex flex-col-reverse items-start gap-6 pt-4 sm:flex-row sm:items-center">
             <Link
               to="/reservation"
-              className="btn btn-primary btn-lg group rounded-full px-16 text-lg tracking-tight transition-transform hover:scale-105"
+              className="btn btn-primary btn-lg group w-full rounded-full px-16 text-lg tracking-tight hover:scale-105 md:w-auto"
             >
-              Book Now
-              <span className="inline-block transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              Reserve Now
+              <MoveRight
+                strokeWidth={0.5}
+                className="transition-transform group-hover:translate-x-2"
+              />
             </Link>
 
-            <div className="bg-secondary-content/20 hidden h-12 w-px sm:block" />
+            <div className="divider divider-horizontal mx-0 hidden h-10 place-self-center md:flex" />
 
             <div className="text-black">
               <p className="text-xs font-bold tracking-widest uppercase">

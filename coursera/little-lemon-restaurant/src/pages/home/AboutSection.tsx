@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+
 import MarioAndAdrian from "@/assets/Mario-and-Adrian.jpg";
 import Restaurant from "@/assets/restaurant.jpg";
-import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -32,9 +33,9 @@ const AboutSection = () => {
           </Link>
         </div>
 
-        {/* Image Layout: Simple Overlap */}
+   
         <div className="relative lg:w-1/2">
-          {/* Background Image (The Chef/Team) */}
+    
           <div className="relative z-10 ml-auto w-4/5">
             <img
               src={MarioAndAdrian}
@@ -43,7 +44,7 @@ const AboutSection = () => {
             />
           </div>
 
-          {/* Foreground Image (The Restaurant) */}
+          
           <div className="absolute -bottom-12 left-0 z-20 w-3/5">
             <img
               src={Restaurant}

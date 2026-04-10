@@ -2,6 +2,8 @@ import GreekSalad from "@/assets/greek-salad.jpg";
 import LemonDesert from "@/assets/lemon-dessert.jpg";
 import Bruchetta from "@/assets/bruchetta.svg";
 import Seabass from "@/assets/grilled-seabass.jpg";
+import { Link } from "react-router-dom";
+import { Minus } from "lucide-react";
 
 const FeatureSpecialDish = () => {
   return (
@@ -40,7 +42,7 @@ const FeatureDishMenu = ({ dishes }: { dishes: Dish[] }) => {
   return dishes.map((dish, idx) => (
     <div
       key={dish.title}
-      className="group hover:bg-base-200/50 flex items-center justify-between px-4 py-8 transition-colors"
+      className="group hover:bg-base-200/50 flex cursor-pointer items-center justify-between px-4 py-8 transition-colors"
     >
       <div className="flex items-center gap-6">
         <span className="text-secondary font-mono text-xs">0{idx + 2}</span>
@@ -68,9 +70,10 @@ const Specials = () => {
     <main className="bg-white py-24">
       <section className="container mx-auto px-6">
         <header className="mb-16 flex flex-col">
-          <span className="text-secondary mb-4 font-mono text-xs tracking-[0.3em] uppercase">
-            — Selected Chef Specials
-          </span>
+          <p className="text-secondary mb-4 flex items-center gap-3 font-mono text-xs tracking-[0.3em] uppercase">
+            <Minus strokeWidth={1} className="text-secondary" />
+            Selected Chef Specials
+          </p>
           <h2 className="text-6xl leading-none font-black tracking-tighter md:text-8xl">
             WEEKLY <br /> <span className="ml-12 md:ml-24">SPECIAUX.</span>
           </h2>
@@ -82,9 +85,12 @@ const Specials = () => {
           <div className="divide-primary/10 border-primary/10 flex flex-col divide-y border-t lg:col-span-5">
             <FeatureDishMenu dishes={dishes.slice(1)} />
 
-            <button className="btn btn-ghost text-secondary mt-8 justify-start text-xs font-bold tracking-widest uppercase hover:bg-transparent">
+            <Link
+              to="/menu"
+              className="btn btn-ghost text-secondary mt-8 justify-start text-xs font-bold tracking-widest uppercase hover:bg-transparent"
+            >
               View All 42 Dishes —
-            </button>
+            </Link>
           </div>
         </section>
       </section>

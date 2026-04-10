@@ -1,12 +1,13 @@
+import Crew from "@/assets/whole-crew.jpg";
+
 const About = () => {
   return (
-    <div className="bg-base-100 min-h-screen pb-24">
-      {/* 1. HERO: The Modern Statement */}
+    <main className="min-h-screen">
       <section className="container mx-auto px-6 py-24">
-        <div className="max-w-4xl">
-          <span className="text-accent mb-6 block font-mono text-xs tracking-[0.4em] uppercase">
-            Our Heritage / Chicago
-          </span>
+        <header className="max-w-4xl">
+          <p className="text-accent mb-6 block font-mono text-xs tracking-[0.4em] uppercase">
+            - Our Heritage / Chicago
+          </p>
           <h1 className="text-primary mb-12 text-6xl leading-[0.85] font-black tracking-tighter md:text-8xl">
             TRADITION <br />
             <span className="text-accent ml-12 font-serif font-normal italic md:ml-24">
@@ -18,22 +19,16 @@ const About = () => {
             vibrant, sun-drenched flavors of the Mediterranean to the heart of
             Chicago.
           </p>
-        </div>
+        </header>
       </section>
 
-      {/* 2. THE FOUNDERS: Asymmetric Storytelling */}
       <section className="container mx-auto mb-32 grid grid-cols-1 items-center gap-16 px-6 lg:grid-cols-12">
         <div className="relative lg:col-span-6">
-          {/* Main Image */}
           <div className="aspect-4/5 overflow-hidden rounded-4xl shadow-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?q=80&w=800"
-              alt="The Founders"
-              className="h-full w-full object-cover"
-            />
+            <img src={Crew} alt="The Crew" className="size-full object-cover" />
           </div>
-          {/* Overlapping Badge */}
-          <div className="bg-secondary text-secondary-content absolute -right-8 -bottom-8 hidden max-w-xs rounded-[2rem] p-8 shadow-xl md:block">
+
+          <div className="bg-secondary text-secondary-content absolute -right-8 -bottom-8 hidden max-w-xs rounded-4xl p-8 shadow-xl md:block">
             <p className="font-serif text-xl italic">
               "Food is the language of the heart. We just provide the
               translation."
@@ -63,11 +58,10 @@ const About = () => {
         </div>
       </section>
 
-      {/* 3. PHILOSOPHY: The "Three Pillars" (Bento Style) */}
-      <section className="bg-base-200 py-24">
+      <section className="bg-base-200 py-32">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="bg-base-100 border-base-300/50 space-y-4 rounded-[2rem] border p-10">
+            <div className="bg-base-100 border-base-300/50 space-y-4 rounded-4xl border p-10">
               <span className="text-4xl">🍋</span>
               <h3 className="text-primary text-xl font-bold uppercase">
                 Sourcing
@@ -77,7 +71,7 @@ const About = () => {
                 imports from our home regions.
               </p>
             </div>
-            <div className="bg-primary text-primary-content space-y-4 rounded-[2rem] p-10 shadow-xl md:-translate-y-8">
+            <div className="bg-secondary text-secondary-content space-y-4 rounded-4xl p-10 shadow-xl md:-translate-y-8">
               <span className="text-4xl">🔥</span>
               <h3 className="text-xl font-bold uppercase">Technique</h3>
               <p className="text-sm italic opacity-80">
@@ -85,7 +79,7 @@ const About = () => {
                 cannot be rushed or replicated.
               </p>
             </div>
-            <div className="bg-base-100 border-base-300/50 space-y-4 rounded-[2rem] border p-10">
+            <div className="bg-base-100 border-base-300/50 space-y-4 rounded-4xl border p-10">
               <span className="text-4xl">🌿</span>
               <h3 className="text-primary text-xl font-bold uppercase">
                 Culture
@@ -99,15 +93,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* 4. FINAL ACCENT: A Cinematic Full-Width Image */}
-      <section className="mt-24 h-[500px] w-full">
+      <section className="h-130 w-full">
         <img
           src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1600"
           alt="Atmosphere"
-          className="h-full w-full object-cover brightness-75 grayscale-[40%]"
+          className="h-full w-full object-cover brightness-75 grayscale-40"
         />
       </section>
-    </div>
+    </main>
   );
 };
 

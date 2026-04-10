@@ -1,3 +1,4 @@
+import { Minus } from "lucide-react";
 import { cn } from "@/libs/cn";
 
 interface Reviews {
@@ -51,7 +52,7 @@ const Testimonials = () => {
 
         <footer className="mt-20 text-center">
           <button className="btn btn-ghost btn-sm text-neutral/50 hover:text-primary transition-all hover:bg-transparent">
-            Read all 400+ reviews on Google —
+            Read all 400+ reviews on Google <Minus strokeWidth={0.5} />
           </button>
         </footer>
       </section>

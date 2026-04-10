@@ -2,18 +2,24 @@ import { cn } from "@/libs/cn";
 import { Link } from "react-router-dom";
 
 import Restaurant from "@/assets/restaurant.jpg";
+import { MoveRight } from "lucide-react";
 
+const BannerBackground = () => {
+  return (
+    <div className="absolute inset-0 z-0">
+      <div className="bg-base-200 absolute top-0 right-0 h-full w-2/3 rounded-bl-[100px] md:rounded-bl-[200px]" />
+      <div className="bg-secondary/20 absolute -bottom-5 left-[10%] h-32 w-32 rounded-full blur-xl" />
+    </div>
+  );
+};
 const Banner = () => {
   return (
     <section className="relative w-full py-16 md:py-24">
-      <div className="absolute inset-0 z-0">
-        <div className="bg-base-200 absolute top-0 right-0 h-full w-2/3 rounded-bl-[100px] md:rounded-bl-[200px]" />
-        <div className="bg-secondary/20 absolute -bottom-5 left-[10%] h-32 w-32 rounded-full blur-xl" />
-      </div>
+      <BannerBackground />
 
       <section className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-12">
-          <div className="space-y-6 md:col-span-5 md:space-y-8">
+          <aside className="space-y-6 md:col-span-5 md:space-y-8">
             <hgroup className="space-y-1">
               <h1 className="text-6xl font-extrabold tracking-tighter md:text-8xl">
                 Little Lemon
@@ -34,23 +40,23 @@ const Banner = () => {
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
               <Link
                 to="/reservation"
-                className="btn btn-primary btn-lg shadow-primary/20 rounded-full px-10 text-lg shadow-lg"
+                className="btn btn-primary btn-lg rounded-full px-10 text-lg"
               >
                 Reserve a Table
               </Link>
               <Link
                 to="/menu"
-                className="btn btn-ghost btn-lg group rounded-full text-lg"
+                className="btn btn-ghost btn-lg group items-center rounded-full text-lg"
               >
                 View Menu
                 <span className="inline-block transition-transform group-hover:translate-x-1">
-                  →
+                  <MoveRight strokeWidth={1} />
                 </span>
               </Link>
             </div>
-          </div>
+          </aside>
 
-          <div className="relative md:col-span-7">
+          <aside className="relative md:col-span-7">
             <div className="border-secondary/30 absolute -top-6 -left-6 z-[-1] h-full w-full rounded-3xl border-8" />
 
             <img
@@ -76,7 +82,7 @@ const Banner = () => {
                 <p className="text-neutral/70 text-xs">500+ Google Reviews</p>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
     </section>
