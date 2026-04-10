@@ -6,7 +6,7 @@ This folder contains all my courses, notes, assignments, and projects completed 
 
 ## 📂 Contents
 
-- [Meta Front-End Developer Professional Certificate](./little-lemon-restaurant/)
+- [Meta Front-End Developer Professional Certificate](./coursera/little-lemon-restaurant/)
 
 ---
 
