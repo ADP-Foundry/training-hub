@@ -9,26 +9,22 @@ A high-contrast, minimalist food ordering application designed with engineering 
 <div align="center">
   <table width="100%">
     <tr>
-      <td width="50%">
-        <p align="left"><b>Ipad</b></p>
+      <td width="50%" align="center" style="vertical-align: top;">
+        <p><b>IPHONE 14 PLUS</b></p>
+        <img src="./screenshots/iPhone-14-Plus.webp" alt="IPHONE" width="100%" />
+      </td>
+      <td width="50%" align="center" style="vertical-align: top;">
+        <p><b>IPAD PRO 11</b></p>
         <img src="./screenshots/iPad-PRO-11.webp" alt="IPAD" width="100%" />
       </td>
     </tr>
-
     <tr>
-        <td width="50%">
-        <p align="left"><b>Iphone</b></p>
-        <img src="./screenshots/iPhone-14-Plus.webp" alt="IPHONE" width="100%" />
-        </td>
-    </tr>
-
-    <tr>
-        <td width="50%">
-        <p align="left"><b>Macbook</b></p>
+      <td colspan="2" align="center">
+        <br />
+        <p><b>MACBOOK AIR (DESKTOP VIEW)</b></p>
         <img src="./screenshots/Macbook-Air.webp" alt="Macbook" width="100%" />
-        </td>
+      </td>
     </tr>
-
   </table>
 </div>
 
