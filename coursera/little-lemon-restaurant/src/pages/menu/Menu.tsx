@@ -85,9 +85,12 @@ const FilteredItem = ({ filteredItems }: { filteredItems: MenuItem[] }) => {
         </p>
 
         <div className="flex items-center gap-5 pt-4">
-          <button className="hover:text-primary btn btn-soft btn-sm text-xs font-bold tracking-widest uppercase transition-colors hover:bg-transparent">
+          <Link
+            to="/order"
+            className="hover:text-primary btn btn-soft btn-sm text-xs font-bold tracking-widest uppercase transition-colors hover:bg-transparent"
+          >
             Order Now <MoveRight size={16} />
-          </button>
+          </Link>
           <span className="divider divider-horizontal mx-0 h-5 place-self-center" />
           <button className="text-base-content/40 btn btn-ghost hover:text-base-content btn-sm text-xs font-bold tracking-widest uppercase hover:bg-transparent">
             View Ingredients
