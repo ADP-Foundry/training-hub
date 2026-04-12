@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Menu from "./pages/menu";
 import Reservation from "./pages/reservation";
 import Orders from "./pages/orders";
+import Login from "./pages/auth/login";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="reservation" element={<Reservation />} />
         <Route path="order" element={<Orders />} />
       </Route>
+      <Route path="auth/login" element={<Login />} />
     </Routes>
   );
 };

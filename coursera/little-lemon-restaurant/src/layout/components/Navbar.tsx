@@ -15,7 +15,7 @@ const navbarLinks: NavLink[] = [
   { name: "Menu", path: "/menu" },
   { name: "Reservations", path: "/reservation" },
   { name: "Order Online", path: "/order" },
-  { name: "Login", path: "/login" },
+  { name: "Login", path: "/auth/login" },
 ];
 
 export const Navbar = () => {
